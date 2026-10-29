@@ -64,7 +64,7 @@ int main(){
 	casio.setNumeros(r,n);
 	while(cen==1){
 		cout << "Que quieres hacer?"<<endl;
-		cout << "1.Sumar" <<endl<< "2.Restar" <<endl<< "3.Multiplicar"<<endl<<"4.Dividir"<<endl<<"5.Cambiar Numeros"<<endl;
+		cout << "1.Sumar" <<endl<< "2.Restar" <<endl<< "3.Multiplicar"<<endl<<"4.Dividir"<<endl<<"5.Cambiar Numeros"<<endl<<"6.Salir"<<endl;
 		cin >> c;
 		cout << endl;
 		switch(c){
@@ -85,6 +85,8 @@ int main(){
 				cin >> r >> n;
 				casio.setNumeros(r,n);
 				break;
+			case 6:
+				return 0;
 		}
 		cout <<endl<< "Deseas continuar SI/NO: (0/1)"<< endl;
 		cin >> cen;
